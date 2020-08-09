@@ -542,7 +542,7 @@ header div #burger-container #burger {
 
 #home-hero {
   background-image: url("../img/home-hero/home-hero.jpg");
-  height: 70vh;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -570,7 +570,7 @@ header div #burger-container #burger {
   font-weight: 700;
   color: white;
   border-left: solid 5px #378AC0;
-  padding: 20px 300px 20px 20px;
+  padding: 120px 300px 20px 20px;
 }
 #home-para > div #para {
   font-family: "Montserrat", sans-serif;
@@ -586,6 +586,9 @@ header div #burger-container #burger {
 /* --------------------------
     Maps & Locations
  --------------------------*/
+#maps {
+  padding-bottom: 150px;
+}
 #maps #map-title h1 {
   font-family: "DM Serif Display", serif;
   letter-spacing: 3px;

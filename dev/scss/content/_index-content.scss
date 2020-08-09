@@ -12,7 +12,7 @@
 
 #home-hero{
     background-image: url('../img/home-hero/home-hero.jpg');
-        height: 70vh;
+        height: 90vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -50,7 +50,7 @@
         font-weight: 700;
         color: white;
         border-left: solid 5px $blue;
-        padding: 20px 300px 20px 20px;
+        padding: 120px 300px 20px 20px;
         
         
     }
@@ -72,6 +72,8 @@
  --------------------------*/
 
  #maps{
+     padding-bottom: 150px;
+
     #map-title{
        
         h1{font-family: 'DM Serif Display', serif;
