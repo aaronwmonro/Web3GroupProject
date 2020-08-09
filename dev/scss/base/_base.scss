@@ -14,3 +14,40 @@ ul{
     }
 }
 
+.header-container-2{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+
+    @include md{ grid-template-columns: 30px auto 30px;}
+
+    @include lg{ grid-template-columns: 40px auto 40px;}
+
+    
+    >div{
+        grid-area: container;
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". container .";
+    @include md{ grid-template-columns: 30px auto 30px;}
+
+    @include lg{ grid-template-columns: 40px auto 40px;}
+
+    @include xl{ grid-template-columns: auto 1200px auto;}
+
+    >div{
+        grid-area: container;
+    }
+}
+
+.content-spacing{
+    padding-top: 60px;
+    @include md{
+        padding-top: 100px;
+    }
+}
+

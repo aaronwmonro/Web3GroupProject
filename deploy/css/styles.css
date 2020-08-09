@@ -365,6 +365,58 @@ ul li {
   list-style: none;
 }
 
+.header-container-2 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 768px) {
+  .header-container-2 {
+    grid-template-columns: 30px auto 30px;
+  }
+}
+@media (min-width: 992px) {
+  .header-container-2 {
+    grid-template-columns: 40px auto 40px;
+  }
+}
+.header-container-2 > div {
+  grid-area: container;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 30px auto 30px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 40px auto 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+.grid-container > div {
+  grid-area: container;
+}
+
+.content-spacing {
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .content-spacing {
+    padding-top: 100px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -413,9 +465,163 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+@media (min-width: 992px) {
+  header {
+    background-color: #1f3057;
+  }
+}
+header div {
+  display: grid;
+  grid-template-columns: auto 70px;
+  grid-template-areas: "logo burger";
+}
+header div #name-container {
+  align-items: center;
+  grid-area: logo;
+  display: flex;
+}
+header div #name-container i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+header div #name-container a:link,
+header div #name-container a:visited {
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
+  font-size: 1.875rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.8s;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  header div #name-container a:link,
+header div #name-container a:visited {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 992px) {
+  header div #name-container a:link,
+header div #name-container a:visited {
+    font-size: 1.5625rem;
+  }
+}
+header div #name-container a:link span,
+header div #name-container a:visited span {
+  font-weight: 200;
+}
+header div #burger-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #378ac0;
+}
+header div #burger-container #burger {
+  font-size: 2.1875rem;
+  margin: 20px;
+  color: #fff;
+}
+
 /* =============
     Footer
 ============= */
 /* =============
-    Section 1
+    Index Content
 ============= */
+/* --------------------------
+    Hero
+ --------------------------*/
+#home-page {
+  background-color: #DB7349;
+}
+
+#home-hero {
+  background-image: url("../img/home-hero/home-hero.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-hero h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 3.75rem;
+  letter-spacing: 1px;
+}
+
+/* --------------------------
+    home Paragraphs
+ --------------------------*/
+#home-para > div p {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+#home-para > div #bold-para {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: white;
+  border-left: solid 5px #378AC0;
+  padding: 20px 300px 20px 20px;
+}
+#home-para > div #para {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 400;
+  text-align: right;
+  margin-top: 60px;
+  border-right: solid 5px #378AC0;
+  font-size: 1.0625rem;
+  padding: 20px 20px 20px 200px;
+}
+
+/* --------------------------
+    Maps & Locations
+ --------------------------*/
+#maps #map-title h1 {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 3px;
+  text-align: left;
+  font-weight: 700;
+  color: white;
+  border-left: solid 5px #378AC0;
+  padding: 20px 20px;
+  font-size: 3.75rem;
+}
+#maps #map-location {
+  padding-top: 150px;
+  padding: 150px 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#maps #map-location h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  padding-top: 50px;
+  text-align: center;
+  color: #1F3057;
+  font-weight: 600;
+}
+#maps #map-location p {
+  color: white;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding-top: 30px;
+  text-align: left;
+}
+#maps #map-location #arm-bold {
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 100px 0;
+}

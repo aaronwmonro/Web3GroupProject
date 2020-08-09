@@ -1,0 +1,129 @@
+
+/* =============
+    Index Content
+============= */
+
+/* --------------------------
+    Hero
+ --------------------------*/
+#home-page{
+    background-color: $orange;
+}
+
+#home-hero{
+    background-image: url('../img/home-hero/home-hero.jpg');
+        height: 70vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    
+
+        h1{
+            color: white;
+			font-family: 'DM Serif Display', serif;
+            font-size: rem-calc(60);
+            letter-spacing: 1px;
+
+			
+        }
+       
+}
+
+/* --------------------------
+    home Paragraphs
+ --------------------------*/
+
+#home-para{
+
+    >div{
+        p{
+            font-size: rem-calc(20);
+            line-height: 30px;
+
+    }
+    #bold-para{font-family: 'DM Serif Display', serif;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: white;
+        border-left: solid 5px $blue;
+        padding: 20px 300px 20px 20px;
+        
+        
+    }
+    #para{ font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: 400;
+        text-align: right;
+        margin-top: 60px;
+        border-right: solid 5px $blue;
+        font-size: rem-calc(17);
+        padding: 20px 20px 20px 200px;
+
+    }
+    }
+}
+
+/* --------------------------
+    Maps & Locations
+ --------------------------*/
+
+ #maps{
+    #map-title{
+       
+        h1{font-family: 'DM Serif Display', serif;
+            letter-spacing: 3px;
+            text-align: left;
+            font-weight: 700;
+            color: white;
+            border-left: solid 5px $blue;
+           
+            padding: 20px 20px;
+            font-size: rem-calc(60);
+            
+        }
+
+       
+
+    }
+
+    #map-location{
+        padding-top: 150px;
+        padding: 150px 150px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2{ font-family: 'Montserrat', sans-serif;
+            font-size: rem-calc(25);
+            padding-top: 50px;
+            text-align: center;
+            color: $dark-blue;
+            font-weight: 600;
+        }
+
+        p{color: white;
+           line-height: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: rem-calc(16);
+            padding-top: 30px;
+            text-align: left;
+        }
+
+        #arm-bold{
+            font-weight: 700;
+            text-align: center;
+            padding: 30px 100px 0;
+        }
+
+        #arm-regular{
+            
+        }
+    }
+
+
+ }
+

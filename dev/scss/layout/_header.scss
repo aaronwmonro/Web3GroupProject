@@ -1,3 +1,91 @@
 /* =============
     Header
 ============= */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    @include lg{ background-color: rgba($color: $dark-blue, $alpha: 1.0);}
+  
+    div {
+      display: grid;
+      grid-template-columns: auto 70px;
+      grid-template-areas: "logo burger";
+    
+  
+      // @include lg {
+      //   padding: 20px 0;
+      // }
+  
+      // @include lg {
+      //   grid-template-columns: repeat(2, 1fr);
+      // }
+  
+      #name-container {
+        align-items: center;
+        grid-area: logo;
+        display: flex;
+
+        i{
+            font-size: rem-calc(40);
+        
+            color: $white;
+    
+        }
+        
+  
+        a:link,
+        a:visited {
+            font-family: 'DM Serif Display', serif;
+          font-weight: 500;
+          font-size: rem-calc(30);
+        //   font-style: italic;
+          text-decoration: none;
+          color: $white;
+          transition: 0.8s;
+          padding-left: 10px;
+  
+          @include md {
+            font-size: rem-calc(30);
+          }
+  
+          @include lg {
+            font-size: rem-calc(25);
+          }
+  
+          span {
+            font-weight: 200;
+          }
+        }
+  
+        a:hover,
+        a:active {
+        //   color: black;
+        //   font-size: rem-calc(30);
+        //   font-style: normal;
+        //   transition: 0.8s;
+  
+        }
+  
+      }
+  
+  
+      #burger-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgba($color: $blue, $alpha: 1.0);
+        #burger { 
+        font-size: rem-calc(35);
+        margin: 20px ;
+            color: $white;
+    
+
+        }
+  
+  
+      }
+  
+  
+    }
+  }
