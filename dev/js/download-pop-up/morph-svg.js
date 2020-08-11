@@ -4,7 +4,9 @@
 
 // gsap.from("start", 2,{morphSVG:"#end"});
 
-var uploadAnimationTimeline = gsap.timeline();
+var uploadAnimationTimeline = gsap.timeline({
+    paused: true
+});
 
 gsap.set("#circle", {
     transformOrigin: "center "
@@ -26,4 +28,7 @@ uploadAnimationTimeline.addLabel("downloadToMountain")
 
 
 // gsap.to("#start", {duration: 2, morphSVG: "#end"});
+
+
+
                     

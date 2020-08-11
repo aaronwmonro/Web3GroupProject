@@ -660,7 +660,6 @@ header div #burger-container #burger {
   align-items: center;
 }
 #animation #upload-animation {
-  cursor: pointer;
   height: 150px;
   width: 100%;
 }
@@ -678,5 +677,29 @@ header div #burger-container #burger {
 }
 
 /* --------------------------
-   Animation
+   Pop Up
 --------------------------*/
+#pop-up {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  display: none;
+}
+#pop-up #pop-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pop-up #pop-up-container #pop-up-image {
+  background-image: url("../img/pop-up/pop-up.png");
+  height: 600px;
+  width: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid #378AC0;
+  border-radius: 20px;
+}

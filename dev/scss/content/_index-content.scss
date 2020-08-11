@@ -168,7 +168,7 @@ margin-top: -100px;
      justify-content: center;
      align-items: center;
     #upload-animation{
-        cursor: pointer;
+    
         height: 150px;
         width: 100%;
 
@@ -195,30 +195,31 @@ margin-top: -100px;
  }
 
   /* --------------------------
-    Animation
+    Pop Up
  --------------------------*/
-//  #pop-up{
-//     position: fixed;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     z-index: 900;
-//     #pop-up-container{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         #pop-up-image{
-//             background-image: url('../img/pop-up/pop-up.png');
-//             height: 600px;
-//             width: 800px;
-//             background-position: center;
-//             background-repeat: no-repeat;
-//             background-size: cover;
-//             border: 10px solid $blue;
-//             border-radius: 20px;
+ #pop-up{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    display: none;
+    #pop-up-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #pop-up-image{
+            background-image: url('../img/pop-up/pop-up.png');
+            height: 600px;
+            width: 800px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 10px solid $blue;
+            border-radius: 20px;
         
-//         }
-//     }
-//  }
+        }
+    }
+ }
 
