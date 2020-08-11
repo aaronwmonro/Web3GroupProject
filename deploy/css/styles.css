@@ -542,13 +542,19 @@ header div #burger-container #burger {
 
 #home-hero {
   background-image: url("../img/home-hero/home-hero.jpg");
-  height: 90vh;
+  height: 85vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#home-hero #hero-text-1 {
+  padding-right: 15px;
+}
+#home-hero #hero-text-3 {
+  padding-left: 15px;
 }
 #home-hero h1 {
   color: white;
@@ -558,59 +564,79 @@ header div #burger-container #burger {
 }
 
 /* --------------------------
+    down arrow
+ --------------------------*/
+#down-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#down-arrow-container #arrow {
+  fill: #1F3057;
+}
+#down-arrow-container svg {
+  height: 100px;
+}
+
+/* --------------------------
     home Paragraphs
  --------------------------*/
-#home-para > div p {
-  font-size: 1.25rem;
-  line-height: 30px;
+#home-para {
+  margin-top: -100px;
 }
 #home-para > div #bold-para {
+  border-left: solid 5px #378AC0;
+}
+#home-para > div #bold-para p {
   font-family: "DM Serif Display", serif;
   letter-spacing: 1px;
   font-weight: 700;
   color: white;
-  border-left: solid 5px #378AC0;
-  padding: 120px 300px 20px 20px;
+  padding: 225px 300px 20px 20px;
+  font-size: 1.25rem;
+  line-height: 30px;
 }
 #home-para > div #para {
+  border-right: solid 5px #378AC0;
+}
+#home-para > div #para p {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: 400;
   text-align: right;
   margin-top: 60px;
-  border-right: solid 5px #378AC0;
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   padding: 20px 20px 20px 200px;
+  line-height: 30px;
 }
 
 /* --------------------------
     Maps & Locations
  --------------------------*/
-#maps {
-  padding-bottom: 150px;
+#map-title #map-title-container {
+  border-left: solid 5px #378AC0;
 }
-#maps #map-title h1 {
+#map-title #map-title-container h1 {
   font-family: "DM Serif Display", serif;
   letter-spacing: 3px;
   text-align: left;
   font-weight: 700;
   color: white;
-  border-left: solid 5px #378AC0;
   padding: 20px 20px;
-  font-size: 3.75rem;
+  font-size: 5rem;
+}
+
+#maps {
+  padding-bottom: 150px;
 }
 #maps #map-location {
-  padding-top: 150px;
-  padding: 150px 150px 0;
+  padding: 0 150px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 #maps #map-location h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5625rem;
-  padding-top: 50px;
   text-align: center;
   color: #1F3057;
   font-weight: 600;
@@ -627,4 +653,17 @@ header div #burger-container #burger {
   font-weight: 700;
   text-align: center;
   padding: 30px 100px 0;
+}
+/* --------------------------
+   Animation
+--------------------------*/
+#animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#animation svg {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
 }
