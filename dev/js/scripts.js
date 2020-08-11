@@ -1,5 +1,5 @@
 // @codekit-prepend "gsap-register.js";
-// @codekit-prepend "morphSVG.js";
+// @codekit-prepend "morph-svg.js";
 // @codekit-prepend "down-arrow.js";
 // @codekit-prepend "scroll-trigger.js";
 

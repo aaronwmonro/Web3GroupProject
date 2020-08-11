@@ -124,8 +124,7 @@ margin-top: -100px;
 }
 
  #maps{
-     padding-bottom: 150px;
-
+     
     #map-location{
         padding: 0 150px;
         display: flex;
@@ -140,7 +139,7 @@ margin-top: -100px;
         p{color: white;
            line-height: 25px;
             font-family: 'Montserrat', sans-serif;
-            font-size: rem-calc(16);
+            font-size: rem-calc(19);
             padding-top: 30px;
             text-align: left;
         }
@@ -164,16 +163,62 @@ margin-top: -100px;
  --------------------------*/
 
  #animation{
+     
      display: flex;
      justify-content: center;
      align-items: center;
-    svg {
-        display: block;
-        margin: 20px auto;
-        width:400px;
-      }
+    #upload-animation{
+        cursor: pointer;
+        height: 150px;
+        width: 100%;
+
+        #start{
+            cursor: pointer;
+        }
+        #end{
+            visibility: hidden;
+          }
+
+          #circle{
+              opacity: 0%;
+          }
+
+          #arrow-load{
+            visibility: hidden;
+          }
+
+    }
+
     // #mountains{
     //     visibility:hidden;
     // }
  }
+
+  /* --------------------------
+    Animation
+ --------------------------*/
+//  #pop-up{
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 900;
+//     #pop-up-container{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         #pop-up-image{
+//             background-image: url('../img/pop-up/pop-up.png');
+//             height: 600px;
+//             width: 800px;
+//             background-position: center;
+//             background-repeat: no-repeat;
+//             background-size: cover;
+//             border: 10px solid $blue;
+//             border-radius: 20px;
+        
+//         }
+//     }
+//  }
 

@@ -30,6 +30,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/pop-up/pop-up.png": {
+		"ft": 32768,
+		"iS": 252423,
+		"oA": 0,
+		"oAP": "/deploy/img/pop-up/pop-up.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -122,13 +133,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/js/morphSVG.js": {
+	"/dev/js/morph-svg.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/morphSVG-min.js",
+		"oAP": "/dev/js/morph-svg-min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0

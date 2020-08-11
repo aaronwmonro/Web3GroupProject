@@ -14,7 +14,7 @@ paraTimeline.from("#bold-para-content",{duration:2, alpha:0, x: 800}, "paraFade"
                 
 // maps timeline
 var mapsTimeline = gsap.timeline();
-mapsTimeline.from("#map-title-content",{duration:3, alpha:0, x: 1000, skewX: 45}, "mapFade")
+mapsTimeline.from("#map-title-content",{duration:3, alpha:0, x: 1000}, "mapFade")
 
                 ScrollTrigger.create({
                     trigger: "#para-content",
@@ -29,12 +29,12 @@ mapsTimeline.from("#map-title-content",{duration:3, alpha:0, x: 1000, skewX: 45}
 var armTimeline = gsap.timeline();
 armTimeline.from("#place",{duration:2, alpha:0, y:100}, "armFade")
             .from("#arm-bold",{duration:2, alpha:0, y:50}, "-=1") 
-            .from("#arm-regular",{duration:2, alpha:0, y:-100}, "-=1") 
+            .from("#arm-regular",{duration:2.5, alpha:0, y:-50}, "-=1") 
 
                 ScrollTrigger.create({
                     trigger: "#place",
                     start: "top 90%",
-                    end: "bottom 60%",
+                    end: "bottom 65%",
                     animation: armTimeline,
                     scrub: 2,
                     markers: true

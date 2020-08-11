@@ -626,9 +626,6 @@ header div #burger-container #burger {
   font-size: 5rem;
 }
 
-#maps {
-  padding-bottom: 150px;
-}
 #maps #map-location {
   padding: 0 150px;
   display: flex;
@@ -645,7 +642,7 @@ header div #burger-container #burger {
   color: white;
   line-height: 25px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1875rem;
   padding-top: 30px;
   text-align: left;
 }
@@ -662,8 +659,24 @@ header div #burger-container #burger {
   justify-content: center;
   align-items: center;
 }
-#animation svg {
-  display: block;
-  margin: 20px auto;
-  width: 400px;
+#animation #upload-animation {
+  cursor: pointer;
+  height: 150px;
+  width: 100%;
 }
+#animation #upload-animation #start {
+  cursor: pointer;
+}
+#animation #upload-animation #end {
+  visibility: hidden;
+}
+#animation #upload-animation #circle {
+  opacity: 0%;
+}
+#animation #upload-animation #arrow-load {
+  visibility: hidden;
+}
+
+/* --------------------------
+   Animation
+--------------------------*/
