@@ -36,6 +36,6 @@ armTimeline.from("#place",{duration:2, alpha:0, y:100}, "armFade")
                     start: "top 90%",
                     end: "bottom 65%",
                     animation: armTimeline,
-                    scrub: 2,
-                    markers: true
+                    scrub: 2
+                    // markers: true
                 });

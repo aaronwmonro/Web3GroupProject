@@ -543,7 +543,7 @@ header div #burger-container #burger {
 #home-hero {
   background-image: url("../img/home-hero/home-hero.jpg");
   height: 85vh;
-  background-position: center;
+  background-position: center -120px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -557,6 +557,7 @@ header div #burger-container #burger {
   padding-left: 15px;
 }
 #home-hero h1 {
+  padding: 50px 0 0;
   color: white;
   font-family: "DM Serif Display", serif;
   font-size: 3.75rem;
@@ -633,7 +634,7 @@ header div #burger-container #burger {
 }
 #maps #map-location h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5625rem;
+  font-size: 1.875rem;
   text-align: center;
   color: #1F3057;
   font-weight: 600;
@@ -659,20 +660,36 @@ header div #burger-container #burger {
   justify-content: center;
   align-items: center;
 }
-#animation #upload-animation {
-  height: 150px;
-  width: 100%;
+#animation > div {
+  padding-bottom: 100px;
 }
-#animation #upload-animation #start {
+#animation > div h1 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #D6C64D;
+  font-weight: 600;
+  margin-top: -20px;
+  font-size: 0.875rem;
+}
+#animation > div #upload-animation {
+  height: 125px;
+  width: 1200px;
+}
+#animation > div #upload-animation #start {
+  fill: #D6C64D;
   cursor: pointer;
 }
-#animation #upload-animation #end {
+#animation > div #upload-animation #end {
+  fill: #D6C64D;
   visibility: hidden;
 }
-#animation #upload-animation #circle {
+#animation > div #upload-animation #circle {
+  fill: #D6C64D;
   opacity: 0%;
 }
-#animation #upload-animation #arrow-load {
+#animation > div #upload-animation #arrow-load {
+  fill: #D6C64D;
   visibility: hidden;
 }
 
@@ -685,21 +702,27 @@ header div #burger-container #burger {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 900;
-  display: none;
-}
-#pop-up #pop-up-container {
+  z-index: 1100;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #pop-up #pop-up-container #pop-up-image {
   background-image: url("../img/pop-up/pop-up.png");
-  height: 600px;
-  width: 800px;
+  height: 60vh;
+  width: 85vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 10px solid #378AC0;
   border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+#pop-up #pop-up-container #pop-up-image #pop-up-x {
+  fill: #378AC0;
+  cursor: pointer;
+  width: 40px;
+  padding: 10px;
 }

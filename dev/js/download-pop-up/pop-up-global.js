@@ -1,44 +1,70 @@
-// var canYouSeeTheMap = false;
+var canYouSeeTheMap = false;
 
-// var mapWidth = $("#pop-up").outerWidth();
+var mapWidth = $("#pop-up").outerWidth();
 
-// WebGLSampler.set("pop-up",{
-//     x: -navWidth
-// })
+gsap.set("pop-up",{
+    x: -mapWidth
+})
 
-// var mapPopUpTimeline = gsap.timeline({
-//     paused: true
-// })
-// mapPopUpTimeline.to("#pop-up", {
-//     duration: 0.75,x: -0})
+var mapPopUpTimeline = gsap.timeline({
+    paused: true
+})
+mapPopUpTimeline.from("#pop-up", {
+    duration: 0.75,x: -1800})
 
-// function hideShowMainNav() {
+function slideMapIn(){
+    mapPopUpTimeline.play();
+}
 
-//     if (canYouSeeTheMap === false) {
-//         canYouSeeTheMap = true;
-//         // turn burger into x
-//         uploadAnimationTimeline.play("downloadToMountain");
+function hideShowMap() {
+console.log("working");
+    if (canYouSeeTheMap === false) {
+        canYouSeeTheMap = true;
+        // turn burger into x
+        uploadAnimationTimeline.play();
 
-//         mapPopUpTimeline.play();
-//     } else {
+        // mapPopUpTimeline.play();
+    } else {
        
-//         uploadAnimationTimeline.play("downloadToMountain");
-//         canYouSeeTheMap = false;
-//         // turn x into burger
+        // uploadAnimationTimeline.reverse();
+        canYouSeeTheMap = false;
+        // turn x into burger
 
-//         mapPopUpTimeline.reverse();
-//     }
-// }
+        // uploadAnimationTimeline.invalidate().restart();
+    }
+}
 
-// var menuBackground = document.querySelector('#pop-up');
-// window.onclick = function (event) {
-//     if (event.target == menuBackground) {
-//         hideShowMainNav();
-//     }
-// }
+function hideMap() {
+
+    if (canYouSeeTheMap === false) {
+        canYouSeeTheMap = true;
+        // turn burger into x
+        uploadAnimationTimeline.play();
+
+        // mapPopUpTimeline.play();
+    }
+    else {
+       
+        // uploadAnimationTimeline.reverse();
+        canYouSeeTheMap = false;
+        // turn x into burger
+        uploadAnimationTimeline.invalidate().reverse();
+    }
+}
+
+var menuBackground = document.querySelector('#pop-up');
+window.onclick = function (event) {
+    if (event.target == menuBackground) {
+        hideMap();
+    }
+}
 
 
-// $("#start").on("click", hideShowMainNav);
+$("#start").on("click", hideShowMap);
 
-// $("#pop-up ").on("click", hideShowMainNav);
+$("#pop-up").on("click", hideShowMap);
+
+$("#pop-up-x").on("click", hideMap);
+
+
 
