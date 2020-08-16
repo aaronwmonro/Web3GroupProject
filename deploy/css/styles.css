@@ -714,7 +714,7 @@ header div #burger-container #burger {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   text-align: center;
-  color: #D6C64D;
+  color: #fff45f;
   font-weight: 600;
   margin-top: -20px;
   font-size: 0.875rem;
@@ -724,19 +724,19 @@ header div #burger-container #burger {
   width: 1200px;
 }
 #animation > div #upload-animation #start {
-  fill: #D6C64D;
+  fill: #fff45f;
   cursor: pointer;
 }
 #animation > div #upload-animation #end {
-  fill: #D6C64D;
+  fill: #fff45f;
   visibility: hidden;
 }
 #animation > div #upload-animation #circle {
-  fill: #D6C64D;
+  fill: #fff45f;
   opacity: 0%;
 }
 #animation > div #upload-animation #arrow-load {
-  fill: #D6C64D;
+  fill: #fff45f;
   visibility: hidden;
 }
 

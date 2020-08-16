@@ -197,7 +197,7 @@ padding: 20px;
         h1{font-family: 'Montserrat', sans-serif;
             letter-spacing: 1px;
             text-align: center;
-            color: $yellow;
+            color: $green;
            font-weight: 600;
            margin-top: -20px;
             font-size: rem-calc(14);
@@ -212,19 +212,19 @@ padding: 20px;
            width: 1200px;
     
             #start{ 
-                fill: $yellow;
+                fill: $green;
             
                 cursor: pointer;
             }
-            #end{fill: $yellow;
+            #end{fill: $green;
                 visibility: hidden;
               }
     
-              #circle{fill: $yellow;
+              #circle{fill: $green;
                   opacity: 0%;
               }
     
-              #arrow-load{fill: $yellow;
+              #arrow-load{fill: $green;
                 visibility: hidden;
               }
     
