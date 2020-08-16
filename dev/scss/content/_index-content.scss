@@ -19,6 +19,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 800;
 
         #hero-text-1{
             padding-right: 15px;
@@ -50,12 +51,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -30px;
+    z-index: 900;
 
     #arrow{
         fill: $dark-blue;
     }
     svg{
-        height: 100px;
+        height: 110px;
     }
 }
 /* --------------------------
@@ -63,7 +66,7 @@
  --------------------------*/
 
 #home-para{
-margin-top: -100px;
+margin-top: -80px;
     >div{
         
 
@@ -157,6 +160,25 @@ margin-top: -100px;
 
 
  }
+ 
+  /* --------------------------
+    Photo
+ --------------------------*/
+#arm{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+    img{border: $blue solid 7px;
+        object-fit: cover;
+        object-position: center;
+        height: 200px;
+        width: 600px;
+        // border-radius: 20px;
+
+
+    }
+}
 
  /* --------------------------
     Animation
@@ -238,8 +260,8 @@ margin-top: -100px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            border: 10px solid $blue;
-            border-radius: 20px;
+            border: 7px solid $blue;
+            // border-radius: 20px;
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;

@@ -4,7 +4,7 @@
 // @codekit-prepend "down-arrow.js";
 // @codekit-prepend "scroll-trigger.js";
 
-gsap.registerPlugin(MorphSVGPlugin, ScrollTrigger);
+gsap.registerPlugin(MorphSVGPlugin, ScrollTrigger, DrawSVGPlugin);
 
 // function togglePopup()
 // {document.getElementById("popup-1").classlist.toggle("active");}

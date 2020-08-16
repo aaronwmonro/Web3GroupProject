@@ -39,3 +39,51 @@ armTimeline.from("#place",{duration:2, alpha:0, y:100}, "armFade")
                     scrub: 2
                     // markers: true
                 });
+
+var arrowTimeline = gsap.timeline();
+arrowTimeline.to("#arrow",{duration: 3, scale:0})
+
+                ScrollTrigger.create({
+                    trigger: "#hero-text-1",
+                    start: "top 10%",
+                    end: "bottom 65%",
+                    animation: arrowTimeline
+                    // scrub: 2
+                    // markers: true
+                });
+
+var armPhotoTimeline = gsap.timeline();
+armPhotoTimeline.from("#arm",{duration:3, alpha:0, scale:0})
+
+                ScrollTrigger.create({
+                    trigger: "#arm",
+                    start: "top 90%",
+                    end: "bottom 60%",
+                    animation: armPhotoTimeline,
+                    scrub: 2
+                    // markers: true
+                });
+
+var logoTimeline = gsap.timeline();
+logoTimeline.from("#youtube", {duration:3, alpha:0, scale:0})
+
+                ScrollTrigger.create({
+                    trigger: "#footer",
+                    start: "top 100%",
+                    end: "bottom 60%",
+                    animation: logoTimeline
+                    // scrub: 2,
+                    // markers: true
+                });
+
+var footerTimeline = gsap.timeline();
+footerTimeline.from("#footer-text", {duration:3, alpha:0, y:100})
+
+                ScrollTrigger.create({
+                    trigger: "#facebook",
+                    start: "top 100%",
+                    end: "bottom 50%",
+                    animation: footerTimeline,
+                    // scrub: 2,
+                    markers: true
+                });

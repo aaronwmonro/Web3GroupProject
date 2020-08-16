@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/arm/arm-photo.jpg": {
+		"ft": 16384,
+		"iS": 467583,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/arm/arm-photo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/home-hero/home-hero-1.jpg": {
 		"ft": 16384,
 		"iS": 961616,
@@ -71,6 +82,17 @@
 		"oAP": "/deploy/index.html",
 		"oF": 0
 		},
+	"/deploy/js/gsap/DrawSVGPlugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/gsap/DrawSVGPlugin.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/deploy/js/gsap/MorphSVGPlugin.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -99,6 +121,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
+	"/dev/global/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/footer.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -1882,7 +1912,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "gsap, MorphSVGPlugin, ScrollTrigger",
+	"jsCheckerReservedNamesString": "gsap, MorphSVGPlugin, ScrollTrigger, DrawSVGPlugin",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

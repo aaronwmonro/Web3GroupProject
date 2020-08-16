@@ -530,6 +530,33 @@ header div #burger-container #burger {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #1F3057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+#footer h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.875rem;
+  letter-spacing: 1px;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+#footer ul li {
+  padding: 10px;
+}
+#footer ul li svg {
+  height: 30px;
+}
+
 /* =============
     Index Content
 ============= */
@@ -549,6 +576,7 @@ header div #burger-container #burger {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 800;
 }
 #home-hero #hero-text-1 {
   padding-right: 15px;
@@ -571,19 +599,21 @@ header div #burger-container #burger {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -30px;
+  z-index: 900;
 }
 #down-arrow-container #arrow {
   fill: #1F3057;
 }
 #down-arrow-container svg {
-  height: 100px;
+  height: 110px;
 }
 
 /* --------------------------
     home Paragraphs
  --------------------------*/
 #home-para {
-  margin-top: -100px;
+  margin-top: -80px;
 }
 #home-para > div #bold-para {
   border-left: solid 5px #378AC0;
@@ -653,6 +683,23 @@ header div #burger-container #burger {
   padding: 30px 100px 0;
 }
 /* --------------------------
+   Photo
+--------------------------*/
+#arm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#arm img {
+  border: #378AC0 solid 7px;
+  object-fit: cover;
+  object-position: center;
+  height: 200px;
+  width: 600px;
+}
+
+/* --------------------------
    Animation
 --------------------------*/
 #animation {
@@ -714,8 +761,7 @@ header div #burger-container #burger {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 10px solid #378AC0;
-  border-radius: 20px;
+  border: 7px solid #378AC0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;

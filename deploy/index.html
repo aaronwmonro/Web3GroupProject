@@ -67,6 +67,8 @@
           
       </section>
       
+      
+      
       <section id="down-arrow-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 281">
               <g id="down-arrow-animation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -129,6 +131,11 @@
           </div>
       
       
+      </section>
+      
+      <section id="arm" class="grid-container">
+      
+          <img src="img/arm/arm-photo.jpg" alt="" class="arm-photo">
       </section>
       
       <section id="animation">
@@ -198,6 +205,8 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <!-- Greensock MorphSVG -->
           <script src="js/gsap/MorphSVGPlugin.min.js"></script>
+          <!-- Greensock DrawSVG -->
+          <script src="js/gsap/DrawSVGPlugin.min.js"></script>
           <!-- findShapeIndex -->
           <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js"></script>
           <!-- Scrool Trigger -->
@@ -205,6 +214,35 @@
           <!-- Greensock -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
           <script src="js/scripts-min.js"></script>
+    <section id="footer">
+                  <h1 id="footer-text">
+                      Thank You For Scrolling!
+                  </h1>
+              
+                  <ul id="social">
+                      <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448">
+                          <g id="youtube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M186.8 170.1l95.2 54.1-95.2 54.1V170.1zM448 48v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 96 224 96 224 96s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 352 224 352 224 352s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z" id="youtube" fill="#fff" fill-rule="nonzero"/>
+                          </g>
+                        </svg></li>
+                      <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448">
+                          <g id="instagram" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M224 170.66c-29.456.011-53.327 23.897-53.32 53.353.007 29.457 23.89 53.33 53.347 53.327 29.456-.004 53.333-23.884 53.333-53.34-.022-29.458-23.902-53.329-53.36-53.34zm124.71-41a54 54 0 00-30.41-30.41c-21-8.29-71-6.43-94.3-6.43-23.3 0-73.25-1.93-94.31 6.43a54 54 0 00-30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33s-1.85 73.27 6.47 94.34a54 54 0 0030.41 30.41c21 8.29 71 6.43 94.31 6.43 23.31 0 73.24 1.93 94.3-6.43a54 54 0 0030.41-30.41c8.35-21 6.43-71.05 6.43-94.33s1.92-73.26-6.43-94.33l-.04-.01zM224 306c-45.287 0-82-36.713-82-82s36.713-82 82-82 82 36.713 82 82a81.9 81.9 0 01-82 82zm85.38-148.3a19.14 19.14 0 1119.13-19.14 19.1 19.1 0 01-19.09 19.18l-.04-.04zM400 0H48C21.49 0 0 21.49 0 48v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zm-17.12 290c-1.29 25.63-7.14 48.34-25.85 67-18.71 18.66-41.4 24.63-67 25.85-26.41 1.49-105.59 1.49-132 0-25.63-1.29-48.26-7.15-67-25.85-18.74-18.7-24.63-41.42-25.85-67-1.49-26.42-1.49-105.61 0-132 1.29-25.63 7.07-48.34 25.85-67 18.78-18.66 41.47-24.56 67-25.78 26.41-1.49 105.59-1.49 132 0 25.63 1.29 48.33 7.15 67 25.85 18.67 18.7 24.63 41.42 25.85 67.05 1.49 26.32 1.49 105.44 0 131.88z" id="instagram" fill="#fff" fill-rule="nonzero"/>
+                          </g>
+                        </svg>
+                      </li>
+                      <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448">
+                          <g id="twitter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M400 0H48C21.5 0 0 21.5 0 48v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 01-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" id="twitter" fill="#fff" fill-rule="nonzero"/>
+                          </g>
+                        </svg></li>
+                      <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 448">
+                          <g id="facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M400 0H48C21.49 0 0 21.49 0 48v352c0 26.51 21.49 48 48 48h137.25V295.69h-63V224h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V224h68.78l-11 71.69h-57.78V448H400c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48z" id="facebook" fill="#fff" fill-rule="nonzero"/>
+                          </g>
+                        </svg></li>
+                  </ul>
+              </section>
 
 </body>
 

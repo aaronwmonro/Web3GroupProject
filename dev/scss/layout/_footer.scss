@@ -1,3 +1,32 @@
 /* =============
     Footer
 ============= */
+#footer{background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    h1{
+        color: white;
+        font-family: 'DM Serif Display', serif;
+        font-size: rem-calc(30);
+        letter-spacing: 1px;
+
+        
+    }
+
+    ul{ display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        
+        li{padding: 10px;
+            svg{
+                height: 30px;
+            }
+        }
+    }
+
+   
+}
