@@ -528,36 +528,6 @@ header div #burger-container #burger {
 }
 
 /* =============
-    Footer
-============= */
-#footer {
-  background-color: #1F3057;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 100px;
-}
-#footer h1 {
-  color: white;
-  font-family: "DM Serif Display", serif;
-  font-size: 1.875rem;
-  letter-spacing: 1px;
-}
-#footer ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
-#footer ul li {
-  padding: 10px;
-}
-#footer ul li svg {
-  height: 30px;
-}
-
-/* =============
     Index Content
 ============= */
 /* --------------------------
@@ -603,7 +573,7 @@ header div #burger-container #burger {
   z-index: 900;
 }
 #down-arrow-container #arrow {
-  fill: #1F3057;
+  fill: #fff45f;
 }
 #down-arrow-container svg {
   height: 110px;
@@ -623,7 +593,7 @@ header div #burger-container #burger {
   letter-spacing: 1px;
   font-weight: 700;
   color: white;
-  padding: 225px 300px 20px 20px;
+  padding: 120px 300px 20px 20px;
   font-size: 1.25rem;
   line-height: 30px;
 }
@@ -637,13 +607,31 @@ header div #burger-container #burger {
   text-align: right;
   margin-top: 60px;
   font-size: 1.1875rem;
-  padding: 20px 20px 20px 200px;
+  padding: 20px 20px 120px 200px;
   line-height: 30px;
+}
+
+/* --------------------------
+    Index Hero
+ --------------------------*/
+#index-hero {
+  z-index: 100;
+}
+#index-hero img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  object-position: center;
 }
 
 /* --------------------------
     Maps & Locations
  --------------------------*/
+#map-title {
+  z-index: 200;
+  background-color: #DB7349;
+  position: relative;
+}
 #map-title #map-title-container {
   border-left: solid 5px #378AC0;
 }
@@ -653,10 +641,15 @@ header div #burger-container #burger {
   text-align: left;
   font-weight: 700;
   color: white;
-  padding: 20px 20px;
+  padding: 120px 20px 20px;
   font-size: 5rem;
 }
 
+#maps {
+  z-index: 300;
+  background-color: #DB7349;
+  position: relative;
+}
 #maps #map-location {
   padding: 0 150px;
   display: flex;
@@ -686,12 +679,19 @@ header div #burger-container #burger {
    Photo
 --------------------------*/
 #arm {
+  z-index: 400;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: #DB7349;
+  position: relative;
 }
-#arm img {
+#arm > div {
+  background-color: #DB7349;
+  position: relative;
+}
+#arm > div img {
   border: #378AC0 solid 7px;
   object-fit: cover;
   object-position: center;
@@ -703,9 +703,12 @@ header div #burger-container #burger {
    Animation
 --------------------------*/
 #animation {
+  z-index: 400;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #DB7349;
+  position: relative;
 }
 #animation > div {
   padding-bottom: 100px;
@@ -771,4 +774,34 @@ header div #burger-container #burger {
   cursor: pointer;
   width: 40px;
   padding: 10px;
+}
+
+/* =============
+    Footer
+============= */
+#footer {
+  background-color: #1F3057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+#footer h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.875rem;
+  letter-spacing: 1px;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+#footer ul li {
+  padding: 10px;
+}
+#footer ul li svg {
+  height: 30px;
 }

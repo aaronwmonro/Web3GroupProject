@@ -28,43 +28,45 @@ console.log("working");
        
         // uploadAnimationTimeline.reverse();
         canYouSeeTheMap = false;
-        // turn x into burger
-
-        // uploadAnimationTimeline.invalidate().restart();
-    }
-}
-
-function hideMap() {
-
-    if (canYouSeeTheMap === false) {
-        canYouSeeTheMap = true;
-        // turn burger into x
-        uploadAnimationTimeline.play();
-
-        // mapPopUpTimeline.play();
-    }
-    else {
-       
+        // closeAnimationTimeline.reverse();
+        mapPopUpTimeline.reverse();
         // uploadAnimationTimeline.reverse();
-        canYouSeeTheMap = false;
-        // turn x into burger
-        uploadAnimationTimeline.invalidate().reverse();
+        uploadAnimationTimeline.reverse();
     }
 }
 
-var menuBackground = document.querySelector('#pop-up');
-window.onclick = function (event) {
-    if (event.target == menuBackground) {
-        hideMap();
-    }
-}
+// function hideMap() {
+
+//     if (canYouSeeTheMap === false) {
+//         canYouSeeTheMap = true;
+//         // turn burger into x
+//         closeAnimationTimeline.play();
+
+//         // mapPopUpTimeline.play();
+//     }
+//     else {
+       
+//         // uploadAnimationTimeline.reverse();
+//         canYouSeeTheMap = false;
+//         closeAnimationTimeline.reverse();
+//         // turn x into burger
+//         // uploadAnimationTimeline.invalidate().reverse();
+//     }
+// }
+
+// var menuBackground = document.querySelector('#pop-up');
+// window.onclick = function (event) {
+//     if (event.target == menuBackground) {
+//         hideMap();
+//     }
+// }
 
 
 $("#start").on("click", hideShowMap);
 
-$("#pop-up").on("click", hideShowMap);
+$("#pop-up-x").on("click", hideShowMap);
 
-$("#pop-up-x").on("click", hideMap);
+// $("#pop-up-x").on("click", hideMap);
 
 
 

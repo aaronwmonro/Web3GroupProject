@@ -14,7 +14,7 @@ heroTextTimeline.from("#hero-text-1",{duration: 2, alpha:0, x: -500}, "titleFade
 
   var headerTimeline = gsap.timeline();
 
-headerTimeline.from("#header-container-2",{duration: 3, alpha:0})             
+headerTimeline.from("#header-container-2",{duration: 2, y: 100})             
                     
 
 
